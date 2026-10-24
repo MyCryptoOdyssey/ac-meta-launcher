@@ -1,0 +1,11 @@
+{
+  "ragnar": {
+    "title": "FlyingRagnar's Asheron's Call Metas",
+    "url": "https://github.com/FlyingRagnar/asherons-call-metas",
+    "commit": "66986f2762236b2815504317aecb74313fb0b815",
+    "license": "MIT",
+    "license_file": "metas/ragnar/LICENSE",
+    "default_author": "FlyingRagnar",
+    "note": "Imported unmodified (sources only: .af, .nav, .utl, README.md). Shipped .met files are rebuilt from .af; the 5 HiveQueenDropFork metas have no .af upstream and are decompiled at build time."
+  }
+}

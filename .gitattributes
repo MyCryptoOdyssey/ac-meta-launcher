@@ -1,0 +1,6 @@
+# Meta/nav/loot files are kept byte-for-byte as upstream wrote them (CRLF, exact bytes).
+*.af   -text
+*.met  binary
+*.nav  binary
+*.utl  binary
+*.reg  binary

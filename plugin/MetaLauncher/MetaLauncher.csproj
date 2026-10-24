@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Decal plugin. Builds against the Decal and VirindiViewService DLLs already installed with
+       Decal/VirindiTank (they are not redistributed). Override DecalDir / VVSDir if yours differ. -->
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MetaLauncher</AssemblyName>
+    <RootNamespace>MetaLauncher</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DecalDir Condition="'$(DecalDir)' == ''">C:\Program Files (x86)\Decal 3.0</DecalDir>
+    <VVSDir Condition="'$(VVSDir)' == ''">C:\Games\VirindiPlugins\VirindiViewService</VVSDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Decal.Adapter">
+      <HintPath>$(DecalDir)\Decal.Adapter.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Decal.Interop.Core">
+      <HintPath>$(DecalDir)\.NET 4.0 PIA\Decal.Interop.Core.DLL</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VirindiViewService">
+      <HintPath>$(VVSDir)\VirindiViewService.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

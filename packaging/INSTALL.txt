@@ -1,0 +1,39 @@
+META LAUNCHER for Asheron's Call (End of Retail ACE servers)
+=============================================================
+An in-game window that lists VirindiTank metas in tabs (Quest, KTs, Crafting, Misc,
+My Metas) and loads the one you pick. Includes 139 metas from FlyingRagnar's collection.
+
+YOU NEED: Decal, VirindiTank (comes with VirindiViewService), UtilityBelt (0.2.7 or 1.0).
+
+INSTALL (close all AC clients first)
+1. Copy everything in the "VirindiTank" folder of this zip into your VirindiTank folder
+   (usually C:\Games\VirindiPlugins\VirindiTank). Nothing in it overwrites your own metas
+   unless you already have files with the same names.
+2. Copy the "MetaLauncher" folder into your Decal Plugins folder, so you end up with
+   C:\Games\Decal Plugins\MetaLauncher\MetaLauncher.dll
+3. Double-click MetaLauncher.reg in that folder and click Yes (registers it with Decal).
+   If you put the folder somewhere other than C:\Games\Decal Plugins\MetaLauncher,
+   open the .reg in Notepad and fix the "Path" line first.
+4. Open Decal, find "Meta Launcher" in the plugin list and make sure it is TICKED.
+5. Start AC and log in. The Meta Launcher window appears (Virindi icon).
+
+USING IT
+- Click a tab, click a meta, read the yellow requirement lines, click Load.
+- "Whole fellowship" ticked = loads on all your clients (/ub bc). Most metas are
+  fellowship metas: make the fellowship first. The fellowship leader leads
+  (no Egg needed).
+- Many quest metas need a portal tie (Primary Portal Tie) to a Town Network portal.
+- Stop VTank / Start VTank turn VirindiTank off/on. Meta buttons such as !continue send
+  the meta's own commands.
+- My Metas lists every other .met in your VirindiTank folder.
+- "After a quest, switch to": select a meta, click "Use selected". Quest metas load it
+  when they finish.
+- Loading also turns on UtilityBelt's VTank.PatchExpressionEngine (the metas need it).
+- "(draft)" metas were never published by their author and may be incomplete; they are
+  hidden unless "Show drafts" is ticked.
+- Problems: see MetaLauncher\errors.txt and the chat window.
+
+CREDITS
+Metas: FlyingRagnar (in-game: Sun Invictus), MIT license - see LICENSE-metas.txt.
+Converted with metaf by Eskarina of Morningthaw/Coldeve (GPL-3.0).
+Launcher: MyCryptoOdyssey, MIT license - see LICENSE.txt.

@@ -1,0 +1,11 @@
+{
+  "_help": "Tab for each meta. 'rules' run first (first match wins, regex on 'folder/name'); 'overrides' (meta name -> tab) win over rules. Tabs: Quest, KTs, Crafting, Misc.",
+  "tabs": ["Quest", "KTs", "Crafting", "Misc"],
+  "rules": [
+    {"match": "(?i)kill ?tasks?",                                       "tab": "KTs"},
+    {"match": "(?i)/(MakeBeers|MakeMeads|LightInfusedHealKits|RenegadeHerbalKits|BrewmasterQuest)/", "tab": "Crafting"},
+    {"match": "(?i)^(legendary_quests|quests)/",                         "tab": "Quest"},
+    {"match": ".*",                                                      "tab": "Misc"}
+  ],
+  "overrides": {}
+}

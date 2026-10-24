@@ -1,0 +1,12 @@
+# fetched / generated
+tools/vendor/
+tools/metaf-bin/
+tools/metaf-build/obj/
+tools/metaf-build/bin/
+build/
+dist/
+__pycache__/
+desktop.ini
+plugin/*/obj/
+plugin/*/bin/
+release/
