@@ -29,7 +29,7 @@ namespace MetaLauncher {
 
         public LauncherView(Catalog catalog) {
             this.catalog = catalog;
-            view = new HudView("Meta Launcher", 340, 520, new ACImage(IconId));
+            view = new HudView("Meta Launcher (Beta)", 340, 520, new ACImage(IconId));
             var layout = new HudFixedLayout();
             view.Controls.HeadControl = layout;
 
